@@ -285,12 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A18FD5521E8E44A0000C4C4 /* Acelytic.xcdatamodeld in Sources */,
 				7AEE982F21E8980200EC5C5A /* RxAlamofireMapper.swift in Sources */,
 				7AEE982421E8980200EC5C5A /* Response.swift in Sources */,
 				7A18FD4921E8D3720000C4C4 /* AceEvent.swift in Sources */,
 				7AEE983221E8980200EC5C5A /* SessionManager.swift in Sources */,
 				5D2AFF86FAC519411B7879DD /* Acelytic.swift in Sources */,
-				7A18FD5521E8E44A0000C4C4 /* Acelytic.xcdatamodeld in Sources */,
 				7AEE982921E8980200EC5C5A /* EventLocalDataManager.swift in Sources */,
 				7AEE982A21E8980200EC5C5A /* UIDeviceExt.swift in Sources */,
 				7AEE982821E8980200EC5C5A /* EventRepository.swift in Sources */,
