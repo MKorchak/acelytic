@@ -1,11 +1,18 @@
 import Foundation
 import Alamofire
 
-class TokenAdapter: RequestAdapter {
+class ApiKeyAdapter: RequestAdapter {
+
+    var apiKey: String = ""
+
+    init(_ apiKey: String){
+       self.apiKey = apiKey
+    }
 
     func adapt(_ urlRequest: URLRequest) throws -> URLRequest {
         var urlRequest = urlRequest
-        urlRequest.setValue("1", forHTTPHeaderField: "Api-Key")
+        print("-----\(apiKey)-------")
+        urlRequest.setValue(apiKey, forHTTPHeaderField: "Api-Key")
 
         return urlRequest
     }

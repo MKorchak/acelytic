@@ -6,13 +6,20 @@ import Alamofire
 
 extension SessionManager {
 
-    func request<M: Mappable>(_ method: Alamofire.HTTPMethod,
-                              _ url: URLConvertible,
-                              parameters: [String: Any]? = nil,
-                              encoding: ParameterEncoding = URLEncoding.default,
-                              headers: [String: String]? = nil) -> Observable<M> {
+    func requestRx<M: Mappable>(method: Alamofire.HTTPMethod,
+                                url: URLConvertible,
+                                parameters: Any? = nil,
+                                headers: [String: String]? = nil) -> Observable<M> {
+        var request = URLRequest(url: try! url.asURL())
+        request.httpMethod = method.rawValue
+        if let params = parameters {
+            request.httpBody = try! JSONSerialization.data(withJSONObject: params)
+        }
+        headers?.forEach { element in
+            request.setValue(element.value, forHTTPHeaderField: element.key)
+        }
         return rx
-                .request(method, url, parameters: parameters, encoding: encoding, headers: headers)
+                .request(urlRequest: request)
                 .responseJSON()
                 .flatMap { response -> Observable<Any> in
                     if ((200..<300).contains(response.response?.statusCode ?? 0)) {

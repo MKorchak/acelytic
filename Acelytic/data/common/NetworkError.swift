@@ -1,4 +1,5 @@
 import Foundation
+import ObjectMapper
 
 struct NetworkError: Mappable {
     var message: String = ""

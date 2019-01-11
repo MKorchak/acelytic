@@ -4,29 +4,31 @@ import RxAlamofire
 import Alamofire
 import ObjectMapper
 
-class RemoteApiService: RemoteApiServiceProtocol {
+class RemoteApiService {
+
+    static let shared = RemoteApiService()
+
+    var apiKey: String = ""
 
     private lazy var sessionManager = getSessionManager()
 
     func saveEvents(events: [EventModel]) -> Observable<Response> {
         return sessionManager
-                .request(.post, parameters: events.map {
-            Mapper<EventModel>.map(JSON: events)
-        }, Endpoints.SaveEvent.fetch.url)
+                .requestRx(
+                method: .post,
+                url: Endpoints.SaveEvent.fetch.url,
+                parameters: events.map {
+                    Mapper<EventModel>().toJSON($0)
+                })
     }
 }
 
-protocol RemoteApiServiceProtocol {
 
-    func saveEvents(event: [EventModel]) -> Observable<Response>
-}
-
-
-extension RemoteApiServiceProtocol {
+extension RemoteApiService {
 
     func getSessionManager() -> SessionManager {
         let sessionManager = SessionManager()
-        sessionManager.adapter = TokenAdapter()
+        sessionManager.adapter = ApiKeyAdapter(apiKey)
         return sessionManager
     }
 }

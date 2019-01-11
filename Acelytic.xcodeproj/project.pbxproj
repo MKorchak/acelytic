@@ -7,8 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D2AF467DB432BA10328291C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2AF3FEC0D3689796AF050D /* NetworkError.swift */; };
 		5D2AFF86FAC519411B7879DD /* Acelytic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2AF38AA0B606A654300AED /* Acelytic.swift */; };
+		7AEE982321E8980200EC5C5A /* BackpressureError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE980C21E8980200EC5C5A /* BackpressureError.swift */; };
+		7AEE982421E8980200EC5C5A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE980D21E8980200EC5C5A /* Response.swift */; };
+		7AEE982521E8980200EC5C5A /* PersistanceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE980E21E8980200EC5C5A /* PersistanceError.swift */; };
+		7AEE982621E8980200EC5C5A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE980F21E8980200EC5C5A /* NetworkError.swift */; };
+		7AEE982721E8980200EC5C5A /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE981121E8980200EC5C5A /* EventModel.swift */; };
+		7AEE982821E8980200EC5C5A /* EventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE981221E8980200EC5C5A /* EventRepository.swift */; };
+		7AEE982921E8980200EC5C5A /* EventLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE981421E8980200EC5C5A /* EventLocalDataManager.swift */; };
+		7AEE982A21E8980200EC5C5A /* UIDeviceExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE981621E8980200EC5C5A /* UIDeviceExt.swift */; };
+		7AEE982B21E8980200EC5C5A /* TimeChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE981721E8980200EC5C5A /* TimeChecker.swift */; };
+		7AEE982C21E8980200EC5C5A /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE981821E8980200EC5C5A /* DeviceInfo.swift */; };
+		7AEE982D21E8980200EC5C5A /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE981921E8980200EC5C5A /* LocationService.swift */; };
+		7AEE982E21E8980200EC5C5A /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE981B21E8980200EC5C5A /* Endpoints.swift */; };
+		7AEE982F21E8980200EC5C5A /* RxAlamofireMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE981C21E8980200EC5C5A /* RxAlamofireMapper.swift */; };
+		7AEE983021E8980200EC5C5A /* TokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE981D21E8980200EC5C5A /* TokenAdapter.swift */; };
+		7AEE983121E8980200EC5C5A /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE981E21E8980200EC5C5A /* RemoteDataSource.swift */; };
+		7AEE983221E8980200EC5C5A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE981F21E8980200EC5C5A /* SessionManager.swift */; };
+		7AEE983321E8980200EC5C5A /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE982121E8980200EC5C5A /* CoreDataStore.swift */; };
+		7AEE983421E8980200EC5C5A /* C.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE982221E8980200EC5C5A /* C.swift */; };
+		7AEE983D21E898AB00EC5C5A /* Acelytic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE983B21E898AB00EC5C5A /* Acelytic.xcdatamodeld */; };
 		AC12D7EC6B0D76F64AC34F9E /* Pods_Acelytic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5FCDA0CDB40C66E3BC7504 /* Pods_Acelytic.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,10 +44,28 @@
 
 /* Begin PBXFileReference section */
 		5D2AF38AA0B606A654300AED /* Acelytic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acelytic.swift; sourceTree = "<group>"; };
-		5D2AF3FEC0D3689796AF050D /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkError.swift; path = data/NetworkError.swift; sourceTree = "<group>"; };
 		5D2AFCD07F5B8C78D6FD81BB /* libAcelytic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAcelytic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3B4031A00F16F8D596F02C /* Pods-Acelytic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acelytic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Acelytic/Pods-Acelytic.release.xcconfig"; sourceTree = "<group>"; };
 		6C5FCDA0CDB40C66E3BC7504 /* Pods_Acelytic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Acelytic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AEE980C21E8980200EC5C5A /* BackpressureError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackpressureError.swift; sourceTree = "<group>"; };
+		7AEE980D21E8980200EC5C5A /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		7AEE980E21E8980200EC5C5A /* PersistanceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistanceError.swift; sourceTree = "<group>"; };
+		7AEE980F21E8980200EC5C5A /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		7AEE981121E8980200EC5C5A /* EventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		7AEE981221E8980200EC5C5A /* EventRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRepository.swift; sourceTree = "<group>"; };
+		7AEE981421E8980200EC5C5A /* EventLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLocalDataManager.swift; sourceTree = "<group>"; };
+		7AEE981621E8980200EC5C5A /* UIDeviceExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExt.swift; sourceTree = "<group>"; };
+		7AEE981721E8980200EC5C5A /* TimeChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeChecker.swift; sourceTree = "<group>"; };
+		7AEE981821E8980200EC5C5A /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		7AEE981921E8980200EC5C5A /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		7AEE981B21E8980200EC5C5A /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		7AEE981C21E8980200EC5C5A /* RxAlamofireMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAlamofireMapper.swift; sourceTree = "<group>"; };
+		7AEE981D21E8980200EC5C5A /* TokenAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenAdapter.swift; sourceTree = "<group>"; };
+		7AEE981E21E8980200EC5C5A /* RemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		7AEE981F21E8980200EC5C5A /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		7AEE982121E8980200EC5C5A /* CoreDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+		7AEE982221E8980200EC5C5A /* C.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C.swift; sourceTree = "<group>"; };
+		7AEE983C21E898AB00EC5C5A /* AcelyticTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AcelyticTest.xcdatamodel; sourceTree = "<group>"; };
 		826AE358ADE8016E6B3199AB /* Pods-Acelytic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acelytic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Acelytic/Pods-Acelytic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,6 +84,7 @@
 		40550264319F4A14BFBADA2F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				7AEE983B21E898AB00EC5C5A /* Acelytic.xcdatamodeld */,
 				826AE358ADE8016E6B3199AB /* Pods-Acelytic.debug.xcconfig */,
 				6C3B4031A00F16F8D596F02C /* Pods-Acelytic.release.xcconfig */,
 			);
@@ -57,8 +94,12 @@
 		5D2AFA76F2946BC80853978C /* Acelytic */ = {
 			isa = PBXGroup;
 			children = (
+				7AEE981A21E8980200EC5C5A /* api */,
+				7AEE982221E8980200EC5C5A /* C.swift */,
+				7AEE980A21E8980200EC5C5A /* data */,
+				7AEE982021E8980200EC5C5A /* db */,
+				7AEE981521E8980200EC5C5A /* util */,
 				5D2AF38AA0B606A654300AED /* Acelytic.swift */,
-				5D2AF3FEC0D3689796AF050D /* NetworkError.swift */,
 			);
 			path = Acelytic;
 			sourceTree = "<group>";
@@ -79,6 +120,75 @@
 				5D2AFCD07F5B8C78D6FD81BB /* libAcelytic.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7AEE980A21E8980200EC5C5A /* data */ = {
+			isa = PBXGroup;
+			children = (
+				7AEE980B21E8980200EC5C5A /* common */,
+				7AEE981021E8980200EC5C5A /* event */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		7AEE980B21E8980200EC5C5A /* common */ = {
+			isa = PBXGroup;
+			children = (
+				7AEE980C21E8980200EC5C5A /* BackpressureError.swift */,
+				7AEE980D21E8980200EC5C5A /* Response.swift */,
+				7AEE980E21E8980200EC5C5A /* PersistanceError.swift */,
+				7AEE980F21E8980200EC5C5A /* NetworkError.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		7AEE981021E8980200EC5C5A /* event */ = {
+			isa = PBXGroup;
+			children = (
+				7AEE981121E8980200EC5C5A /* EventModel.swift */,
+				7AEE981221E8980200EC5C5A /* EventRepository.swift */,
+				7AEE981321E8980200EC5C5A /* local */,
+			);
+			path = event;
+			sourceTree = "<group>";
+		};
+		7AEE981321E8980200EC5C5A /* local */ = {
+			isa = PBXGroup;
+			children = (
+				7AEE981421E8980200EC5C5A /* EventLocalDataManager.swift */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		7AEE981521E8980200EC5C5A /* util */ = {
+			isa = PBXGroup;
+			children = (
+				7AEE981621E8980200EC5C5A /* UIDeviceExt.swift */,
+				7AEE981721E8980200EC5C5A /* TimeChecker.swift */,
+				7AEE981821E8980200EC5C5A /* DeviceInfo.swift */,
+				7AEE981921E8980200EC5C5A /* LocationService.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		7AEE981A21E8980200EC5C5A /* api */ = {
+			isa = PBXGroup;
+			children = (
+				7AEE981B21E8980200EC5C5A /* Endpoints.swift */,
+				7AEE981C21E8980200EC5C5A /* RxAlamofireMapper.swift */,
+				7AEE981D21E8980200EC5C5A /* TokenAdapter.swift */,
+				7AEE981E21E8980200EC5C5A /* RemoteDataSource.swift */,
+				7AEE981F21E8980200EC5C5A /* SessionManager.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		7AEE982021E8980200EC5C5A /* db */ = {
+			isa = PBXGroup;
+			children = (
+				7AEE982121E8980200EC5C5A /* CoreDataStore.swift */,
+			);
+			path = db;
 			sourceTree = "<group>";
 		};
 		A132674289C061283AD41529 /* Frameworks */ = {
@@ -165,8 +275,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AEE983D21E898AB00EC5C5A /* Acelytic.xcdatamodeld in Sources */,
+				7AEE982F21E8980200EC5C5A /* RxAlamofireMapper.swift in Sources */,
+				7AEE982421E8980200EC5C5A /* Response.swift in Sources */,
+				7AEE983221E8980200EC5C5A /* SessionManager.swift in Sources */,
 				5D2AFF86FAC519411B7879DD /* Acelytic.swift in Sources */,
-				5D2AF467DB432BA10328291C /* NetworkError.swift in Sources */,
+				7AEE982921E8980200EC5C5A /* EventLocalDataManager.swift in Sources */,
+				7AEE982A21E8980200EC5C5A /* UIDeviceExt.swift in Sources */,
+				7AEE982821E8980200EC5C5A /* EventRepository.swift in Sources */,
+				7AEE982521E8980200EC5C5A /* PersistanceError.swift in Sources */,
+				7AEE982621E8980200EC5C5A /* NetworkError.swift in Sources */,
+				7AEE982C21E8980200EC5C5A /* DeviceInfo.swift in Sources */,
+				7AEE983321E8980200EC5C5A /* CoreDataStore.swift in Sources */,
+				7AEE982721E8980200EC5C5A /* EventModel.swift in Sources */,
+				7AEE983121E8980200EC5C5A /* RemoteDataSource.swift in Sources */,
+				7AEE983421E8980200EC5C5A /* C.swift in Sources */,
+				7AEE982D21E8980200EC5C5A /* LocationService.swift in Sources */,
+				7AEE982E21E8980200EC5C5A /* Endpoints.swift in Sources */,
+				7AEE982321E8980200EC5C5A /* BackpressureError.swift in Sources */,
+				7AEE982B21E8980200EC5C5A /* TimeChecker.swift in Sources */,
+				7AEE983021E8980200EC5C5A /* TokenAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,8 +411,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -323,6 +450,7 @@
 				5D2AFF79D93D8DCF3816A75B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D2AF3F4F43AE02A9E551B91 /* Build configuration list for PBXProject "Acelytic" */ = {
 			isa = XCConfigurationList;
@@ -334,6 +462,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7AEE983B21E898AB00EC5C5A /* Acelytic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7AEE983C21E898AB00EC5C5A /* AcelyticTest.xcdatamodel */,
+			);
+			currentVersion = 7AEE983C21E898AB00EC5C5A /* AcelyticTest.xcdatamodel */;
+			path = Acelytic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5D2AFA81E69501D105BF6B4A /* Project object */;
 }
