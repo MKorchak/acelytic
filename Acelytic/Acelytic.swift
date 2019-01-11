@@ -53,9 +53,9 @@ public class Acelytic {
         let _ = fullLogEvent(name, params)
                 .subscribe(onNext: { (Response
                 ) in
-//                    print(Response)
+                    print(Response)
                 }, onError: { (Error) in
-//                    print(Error)
+                    print(Error)
                 }) {
 
                 }
@@ -92,9 +92,6 @@ public class Acelytic {
                     return event
                 }
                 .observeOn(MainScheduler.instance)
-                .do(onNext: { event in
-                    print(event.properties)
-                })
                 .flatMap { event in
                     self.internalLogEvent(event)
                 }
