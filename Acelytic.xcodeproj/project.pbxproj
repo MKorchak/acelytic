@@ -84,7 +84,6 @@
 		40550264319F4A14BFBADA2F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7AEE983B21E898AB00EC5C5A /* Acelytic.xcdatamodeld */,
 				826AE358ADE8016E6B3199AB /* Pods-Acelytic.debug.xcconfig */,
 				6C3B4031A00F16F8D596F02C /* Pods-Acelytic.release.xcconfig */,
 			);
@@ -100,6 +99,7 @@
 				7AEE982021E8980200EC5C5A /* db */,
 				7AEE981521E8980200EC5C5A /* util */,
 				5D2AF38AA0B606A654300AED /* Acelytic.swift */,
+				7AEE983B21E898AB00EC5C5A /* Acelytic.xcdatamodeld */,
 			);
 			path = Acelytic;
 			sourceTree = "<group>";
