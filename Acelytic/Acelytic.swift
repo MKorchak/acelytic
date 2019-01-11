@@ -53,9 +53,9 @@ public class Acelytic {
         let _ = fullLogEvent(name, params)
                 .subscribe(onNext: { (Response
                 ) in
-                    print(Response)
+//                    print(Response)
                 }, onError: { (Error) in
-                    print(Error)
+//                    print(Error)
                 }) {
 
                 }
