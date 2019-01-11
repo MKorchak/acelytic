@@ -11,7 +11,7 @@ import ObjectMapper
 
 public class Acelytic {
 
-    static let shared = Acelytic()
+    public static let shared = Acelytic()
 
     private lazy var repository: EventRepository = {
         EventRepository()
@@ -25,19 +25,19 @@ public class Acelytic {
         NotificationCenter.default.removeObserver(self)
     }
 
-    func initialize(_ key: String) {
+    public func initialize(_ key: String) {
         RemoteApiService.shared.apiKey = key
         isInit = true
     }
 
-    func enableLocationTracking() {
+    public func enableLocationTracking() {
         if (!isInit) {
             return
         }
         deviceInfo.startUpdateLocation()
     }
 
-    func enableForegroundTracking() {
+    public func enableForegroundTracking() {
         if (!isInit) {
             return
         }
@@ -46,7 +46,7 @@ public class Acelytic {
     }
 
 
-    func logEvent(_ name: String, params: [String: String] = [:]) {
+    public func logEvent(_ name: String, params: [String: String] = [:]) {
         if (!isInit) {
             return
         }
@@ -61,14 +61,14 @@ public class Acelytic {
                 }
     }
 
-    func setUserId(_ userId: String) {
+    public func setUserId(_ userId: String) {
         if(!isInit){
             return
         }
         UserDefaults.standard.set(userId, forKey: C.ACE_USER_ID_DEFAULTS)
     }
 
-    func clearUserId() {
+    public func clearUserId() {
         if(!isInit){
             return
         }
