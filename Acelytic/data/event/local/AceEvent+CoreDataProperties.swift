@@ -18,6 +18,6 @@ extension AceEvent {
     @NSManaged public var id: String?
     @NSManaged public var name: String?
     @NSManaged public var properties: String?
-    @NSManaged public var time: Double = Double(0)
+    @NSManaged public var time: Double
 
 }
