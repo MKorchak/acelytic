@@ -53,12 +53,10 @@ public class Acelytic {
         let _ = fullLogEvent(name, params)
                 .subscribe(onNext: { (Response
                 ) in
-                    print(Response)
+                    Logging.shared.log("success")
                 }, onError: { (Error) in
-                    print(Error)
-                }) {
-
-                }
+                    Logging.shared.log("error")
+                })
     }
 
     public func setUserId(_ userId: String) {
