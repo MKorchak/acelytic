@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Acelytic"
-  s.version      = "0.2.3"
+  s.version      = "0.2.4"
   s.summary      = "Analytic SDK for ACE."
 
   # This description is used to generate tags and improve search results.
@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "12.0"
+  s.platform     = :ios, "11.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -90,8 +90,8 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "Acelytic/**/*.{h,swift,xcdatamodeld}"
-  s.resources = "Acelytic/*.xcdatamodeld"
-  # s.resource_bundles = {'Acelytic' => ['Acelytic/*.xcdatamodeld']}
+  # s.resources = "Acelytic/*.xcdatamodeld"
+  s.resource_bundles = {'Acelytic' => ['Acelytic/*.xcdatamodeld']}
 
   # s.exclude_files = "Classes/Exclude"
 
