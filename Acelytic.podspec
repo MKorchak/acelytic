@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Acelytic"
-  s.version      = "0.1.2"
+  s.version      = "0.1.3"
   s.summary      = "Analytic SDK for ACE."
 
   # This description is used to generate tags and improve search results.
@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "12.0"
+  s.platform     = :ios, "11.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
