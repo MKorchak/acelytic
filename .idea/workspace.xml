@@ -4,6 +4,7 @@
     <list default="true" id="f91af174-b8a4-4f91-80c5-10b5411ea3a7" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/Acelytic/util/Logging.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Acelytic.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/Acelytic.podspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Acelytic.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Acelytic.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Acelytic.xcworkspace/xcuserdata/alexeypanyok.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Acelytic.xcworkspace/xcuserdata/alexeypanyok.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Acelytic/Acelytic.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Acelytic/Acelytic.swift" afterDir="false" />
@@ -45,13 +46,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Podfile" value="5" />
-          <entry key="podspec" value="43" />
+          <entry key="podspec" value="49" />
           <entry key="swift" value="450" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="43" />
+          <entry key="PLAIN_TEXT" value="49" />
           <entry key="Podfile" value="5" />
           <entry key="Swift" value="450" />
         </counts>
@@ -115,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Acelytic.podspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="276">
+              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -168,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Acelytic.podspec" />
         <option value="$PROJECT_DIR$/Podfile" />
         <option value="$PROJECT_DIR$/Acelytic/api/SessionManager.swift" />
         <option value="$PROJECT_DIR$/Acelytic/data/Response.swift" />
@@ -176,6 +176,7 @@
         <option value="$PROJECT_DIR$/Acelytic/data/NetworkError.swift" />
         <option value="$PROJECT_DIR$/Acelytic/Acelytic.swift" />
         <option value="$PROJECT_DIR$/Acelytic/util/Logging.swift" />
+        <option value="$PROJECT_DIR$/Acelytic.podspec" />
       </list>
     </option>
   </component>
@@ -235,13 +236,6 @@
             <path>
               <item name="Acelytic" type="b2602c69:ProjectViewProjectNode" />
               <item name="Acelytic" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="Acelytic" type="462c0819:PsiDirectoryNode" />
-              <item name="Acelytic" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Acelytic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Acelytic" type="47feb1d3:ProjectViewModuleNode" />
               <item name="Headers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -295,18 +289,17 @@
       <workItem from="1547050736106" duration="2860000" />
       <workItem from="1547197621258" duration="444000" />
       <workItem from="1547198993063" duration="1146000" />
-      <workItem from="1547219107060" duration="1575000" />
+      <workItem from="1547219107060" duration="1903000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11087000" />
+    <option name="totallyTimeSpent" value="11415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1178" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26464325" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26464325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -319,7 +312,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32871288" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.33979592" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -471,8 +464,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Acelytic.podspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="276">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
         </state>
       </provider>
     </entry>
