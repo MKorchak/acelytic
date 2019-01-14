@@ -12,7 +12,7 @@
 		7A18FD4621E8BAFA0000C4C4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A18FD4521E8BAFA0000C4C4 /* CoreData.framework */; };
 		7A18FD4921E8D3720000C4C4 /* AceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A18FD4821E8D3720000C4C4 /* AceEvent.swift */; };
 		7A18FD4B21E8D3AA0000C4C4 /* AceEvent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A18FD4A21E8D3AA0000C4C4 /* AceEvent+CoreDataProperties.swift */; };
-		7A18FD5821ECEE7F0000C4C4 /* Acelytic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A18FD5621ECEE7F0000C4C4 /* Acelytic.xcdatamodeld */; };
+		7A18FD5E21ECF5090000C4C4 /* Acelytic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A18FD5C21ECF5090000C4C4 /* Acelytic.xcdatamodeld */; };
 		7AEE982321E8980200EC5C5A /* BackpressureError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE980C21E8980200EC5C5A /* BackpressureError.swift */; };
 		7AEE982421E8980200EC5C5A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE980D21E8980200EC5C5A /* Response.swift */; };
 		7AEE982521E8980200EC5C5A /* PersistanceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE980E21E8980200EC5C5A /* PersistanceError.swift */; };
@@ -55,7 +55,7 @@
 		7A18FD4521E8BAFA0000C4C4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7A18FD4821E8D3720000C4C4 /* AceEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AceEvent.swift; sourceTree = "<group>"; };
 		7A18FD4A21E8D3AA0000C4C4 /* AceEvent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AceEvent+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7A18FD5721ECEE7F0000C4C4 /* Acelytic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Acelytic.xcdatamodel; sourceTree = "<group>"; };
+		7A18FD5D21ECF5090000C4C4 /* Acelytic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Acelytic.xcdatamodel; sourceTree = "<group>"; };
 		7AEE980C21E8980200EC5C5A /* BackpressureError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackpressureError.swift; sourceTree = "<group>"; };
 		7AEE980D21E8980200EC5C5A /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		7AEE980E21E8980200EC5C5A /* PersistanceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistanceError.swift; sourceTree = "<group>"; };
@@ -102,13 +102,13 @@
 		5D2AFA76F2946BC80853978C /* Acelytic */ = {
 			isa = PBXGroup;
 			children = (
-				7A18FD5621ECEE7F0000C4C4 /* Acelytic.xcdatamodeld */,
 				7AEE981A21E8980200EC5C5A /* api */,
 				7AEE982221E8980200EC5C5A /* C.swift */,
 				7AEE980A21E8980200EC5C5A /* data */,
 				7AEE982021E8980200EC5C5A /* db */,
 				7AEE981521E8980200EC5C5A /* util */,
 				5D2AF38AA0B606A654300AED /* Acelytic.swift */,
+				7A18FD5C21ECF5090000C4C4 /* Acelytic.xcdatamodeld */,
 			);
 			path = Acelytic;
 			sourceTree = "<group>";
@@ -310,7 +310,7 @@
 				7AEE982B21E8980200EC5C5A /* TimeChecker.swift in Sources */,
 				7AEE983021E8980200EC5C5A /* TokenAdapter.swift in Sources */,
 				5D2AFDD16E67D4B513BA16A1 /* Logging.swift in Sources */,
-				7A18FD5821ECEE7F0000C4C4 /* Acelytic.xcdatamodeld in Sources */,
+				7A18FD5E21ECF5090000C4C4 /* Acelytic.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,14 +482,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7A18FD5621ECEE7F0000C4C4 /* Acelytic.xcdatamodeld */ = {
+		7A18FD5C21ECF5090000C4C4 /* Acelytic.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7A18FD5721ECEE7F0000C4C4 /* Acelytic.xcdatamodel */,
+				7A18FD5D21ECF5090000C4C4 /* Acelytic.xcdatamodel */,
 			);
-			currentVersion = 7A18FD5721ECEE7F0000C4C4 /* Acelytic.xcdatamodel */;
+			currentVersion = 7A18FD5D21ECF5090000C4C4 /* Acelytic.xcdatamodel */;
 			path = Acelytic.xcdatamodeld;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
