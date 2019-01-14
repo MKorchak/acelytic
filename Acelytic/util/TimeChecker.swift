@@ -10,7 +10,7 @@ class TimeChecker {
         if ((NSDate().timeIntervalSince1970 - lastTime) > 3.0) {
             lastTime = NSDate().timeIntervalSince1970
         } else {
-            throw BackpressureError.error
+            throw BackpressureError.backPressureError
         }
     }
 }
