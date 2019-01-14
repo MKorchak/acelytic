@@ -9,11 +9,10 @@ class EventRepository {
                 .do(onNext: {
                     try $0.checkTime()
                 })
-                .observeOn(MainScheduler.instance)
+                .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
                 .do(onError: { _ in
                     self.saveEventToDB(event: event)
                 })
-                .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
                 .flatMap { _ in
                     self.internalSendEvent(event: event)
                 }
@@ -23,11 +22,9 @@ class EventRepository {
     //Call in background
     private func internalSendEvent(event: EventModel) -> Observable<Response> {
         return RemoteApiService.shared.saveEvents(events: [event])
-                .observeOn(MainScheduler.instance)
                 .do(onError: { _ in
                     self.saveEventToDB(event: event)
                 })
-                .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
                 .flatMap {
                     self.internalSendEvents()
                             .ifEmpty(switchTo: Observable.just($0))
@@ -42,7 +39,6 @@ class EventRepository {
                 }
                 .flatMap { events in
                     RemoteApiService.shared.saveEvents(events: events)
-                            .observeOn(MainScheduler.instance)
                             .do(onNext: { response in
                                 self.removeEvents(events: events)
                             })
