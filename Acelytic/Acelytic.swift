@@ -53,9 +53,9 @@ public class Acelytic {
         let _ = fullLogEvent(name, params)
                 .subscribe(onNext: { (Response
                 ) in
-                    Logging.shared.log("success")
+                    Logging.shared.log("Success event logged")
                 }, onError: { (Error) in
-                    Logging.shared.log("error")
+                    Logging.shared.log("Error: \(Error)")
                 })
     }
 
