@@ -12,7 +12,6 @@ class EventLocalDataManager {
 
         let request: NSFetchRequest<AceEvent> = NSFetchRequest(entityName: "Event")
         let events = try managedOC.fetch(request)
-
         return try events.map {
             EventModel(
                     name: $0.name ?? "",
@@ -35,8 +34,9 @@ class EventLocalDataManager {
             event.time = eventModel.time
             event.id = UUID().uuidString
             try managedOC.save()
+        } else {
+            throw PersistenceError.couldNotSaveObject
         }
-        throw PersistenceError.couldNotSaveObject
     }
 
     func retrieveEventList() -> [EventModel] {
@@ -59,7 +59,7 @@ class EventLocalDataManager {
         let ids = events.map {
             $0.id
         }
-        let fetch =  NSFetchRequest<NSFetchRequestResult>(entityName: "Event")
+        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Event")
         fetch.predicate = NSPredicate(format: "id IN %@", ids)
         let request = NSBatchDeleteRequest(fetchRequest: fetch)
         let _ = try managedOC.execute(request)
