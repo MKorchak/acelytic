@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D2AF2474F3E646AE23E1566 /* Acelytic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D2AF1A5B63B5A9AC7210110 /* Acelytic.xcdatamodeld */; };
 		5D2AFDD16E67D4B513BA16A1 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2AF50BEC4C701DE7E16CC2 /* Logging.swift */; };
 		5D2AFF86FAC519411B7879DD /* Acelytic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2AF38AA0B606A654300AED /* Acelytic.swift */; };
 		7A18FD4621E8BAFA0000C4C4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A18FD4521E8BAFA0000C4C4 /* CoreData.framework */; };
 		7A18FD4921E8D3720000C4C4 /* AceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A18FD4821E8D3720000C4C4 /* AceEvent.swift */; };
 		7A18FD4B21E8D3AA0000C4C4 /* AceEvent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A18FD4A21E8D3AA0000C4C4 /* AceEvent+CoreDataProperties.swift */; };
-		7A18FD5521E8E44A0000C4C4 /* Acelytic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A18FD5321E8E44A0000C4C4 /* Acelytic.xcdatamodeld */; };
 		7AEE982321E8980200EC5C5A /* BackpressureError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE980C21E8980200EC5C5A /* BackpressureError.swift */; };
 		7AEE982421E8980200EC5C5A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE980D21E8980200EC5C5A /* Response.swift */; };
 		7AEE982521E8980200EC5C5A /* PersistanceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE980E21E8980200EC5C5A /* PersistanceError.swift */; };
@@ -49,13 +49,13 @@
 /* Begin PBXFileReference section */
 		5D2AF38AA0B606A654300AED /* Acelytic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acelytic.swift; sourceTree = "<group>"; };
 		5D2AF50BEC4C701DE7E16CC2 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		5D2AF558444AEB8F4C03E084 /* Acelytic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Acelytic.xcdatamodel; sourceTree = "<group>"; };
 		5D2AFCD07F5B8C78D6FD81BB /* libAcelytic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAcelytic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3B4031A00F16F8D596F02C /* Pods-Acelytic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acelytic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Acelytic/Pods-Acelytic.release.xcconfig"; sourceTree = "<group>"; };
 		6C5FCDA0CDB40C66E3BC7504 /* Pods_Acelytic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Acelytic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A18FD4521E8BAFA0000C4C4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7A18FD4821E8D3720000C4C4 /* AceEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AceEvent.swift; sourceTree = "<group>"; };
 		7A18FD4A21E8D3AA0000C4C4 /* AceEvent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AceEvent+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7A18FD5421E8E44A0000C4C4 /* Acelytic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Acelytic.xcdatamodel; sourceTree = "<group>"; };
 		7AEE980C21E8980200EC5C5A /* BackpressureError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackpressureError.swift; sourceTree = "<group>"; };
 		7AEE980D21E8980200EC5C5A /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		7AEE980E21E8980200EC5C5A /* PersistanceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistanceError.swift; sourceTree = "<group>"; };
@@ -108,6 +108,7 @@
 				7AEE982021E8980200EC5C5A /* db */,
 				7AEE981521E8980200EC5C5A /* util */,
 				5D2AF38AA0B606A654300AED /* Acelytic.swift */,
+				5D2AF1A5B63B5A9AC7210110 /* Acelytic.xcdatamodeld */,
 			);
 			path = Acelytic;
 			sourceTree = "<group>";
@@ -115,7 +116,6 @@
 		5D2AFD5FD2956E3AC9544F19 = {
 			isa = PBXGroup;
 			children = (
-				7A18FD5321E8E44A0000C4C4 /* Acelytic.xcdatamodeld */,
 				5D2AFE434B5546FDF70F07AE /* Products */,
 				5D2AFA76F2946BC80853978C /* Acelytic */,
 				40550264319F4A14BFBADA2F /* Pods */,
@@ -288,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A18FD5521E8E44A0000C4C4 /* Acelytic.xcdatamodeld in Sources */,
 				7AEE982F21E8980200EC5C5A /* RxAlamofireMapper.swift in Sources */,
 				7AEE982421E8980200EC5C5A /* Response.swift in Sources */,
 				7A18FD4921E8D3720000C4C4 /* AceEvent.swift in Sources */,
@@ -311,6 +310,7 @@
 				7AEE982B21E8980200EC5C5A /* TimeChecker.swift in Sources */,
 				7AEE983021E8980200EC5C5A /* TokenAdapter.swift in Sources */,
 				5D2AFDD16E67D4B513BA16A1 /* Logging.swift in Sources */,
+				5D2AF2474F3E646AE23E1566 /* Acelytic.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,13 +482,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7A18FD5321E8E44A0000C4C4 /* Acelytic.xcdatamodeld */ = {
+		5D2AF1A5B63B5A9AC7210110 /* Acelytic.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7A18FD5421E8E44A0000C4C4 /* Acelytic.xcdatamodel */,
+				5D2AF558444AEB8F4C03E084 /* Acelytic.xcdatamodel */,
 			);
-			currentVersion = 7A18FD5421E8E44A0000C4C4 /* Acelytic.xcdatamodel */;
-			path = Acelytic.xcdatamodeld;
+			currentVersion = 5D2AF558444AEB8F4C03E084 /* Acelytic.xcdatamodel */;
+			name = Acelytic.xcdatamodeld;
+			path = ../Acelytic.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
