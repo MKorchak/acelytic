@@ -6,8 +6,8 @@ class CoreDataStore {
     static let shared = CoreDataStore()
 
     lazy var persistentContainer: NSPersistentContainer = {
-        let modelURL = Bundle(for: type(of: self)).url(forResource: "Acelytic", withExtension: "momd")!
-        let managedObjectModel = NSManagedObjectModel(contentsOf: modelURL)!
+//        let modelURL = Bundle(for: type(of: self)).url(forResource: "Acelytic", withExtension: "momd")!
+        let managedObjectModel = NSManagedObjectModel.mergedModel(from: nil)!
         let container = NSPersistentContainer(name: "Acelytic", managedObjectModel: managedObjectModel)
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in })
         return container
