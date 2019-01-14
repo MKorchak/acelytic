@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "Acelytic/**/*.{h,swift,xcdatamodeld}"
   s.resources = "Acelytic/*.xcdatamodeld"
-  # s.resource_bundles = {'Acelytic' => ['Acelytic/*.xcdatamodeld']}
+  s.resource_bundles = {'Acelytic' => ['Acelytic/*.xcdatamodeld']}
 
   # s.exclude_files = "Classes/Exclude"
 
