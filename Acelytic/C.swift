@@ -2,7 +2,7 @@ import Foundation
 
 public struct C {
     public static let START_SESSION = "ace_start_session"
-    public static let END_SESSION = "ace_start_session"
+    public static let END_SESSION = "ace_end_session"
 
     public static let ACE_REVENUE_EVENT = "ace_revenue_event"
     public static let ACE_USER_PROPERTIES_EVENT = "ace_user_properties_event"
