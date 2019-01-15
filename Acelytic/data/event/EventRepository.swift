@@ -46,7 +46,7 @@ class EventRepository {
     private func internalSendEvents() -> Observable<Response> {
         return EventLocalDataManager.shared.retrieveEventList()
                 .do(onNext: { events in
-                    Logging.shared.log("\(events.count) events  retrieved from db")
+                    Logging.shared.log("\(events.count) events retrieved from db")
                 })
                 .filter {
                     !$0.isEmpty
@@ -54,7 +54,7 @@ class EventRepository {
                 .flatMap { events in
                     RemoteApiService.shared.saveEvents(events: events)
                             .do(onError: { error in
-                                Logging.shared.log("\(events.count) Events logged error")
+                                Logging.shared.log("\(events.count) events logged error \(error)")
                             })
                             .flatMap { response in
                                 EventLocalDataManager.shared.removeEvents(events: events).flatMap { _ in Observable.just(response) }

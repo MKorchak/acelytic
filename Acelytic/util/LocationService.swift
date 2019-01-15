@@ -13,7 +13,6 @@ class LocationService: NSObject {
         self.delegate = delegate
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
 }
