@@ -1,7 +1,7 @@
 import Foundation
 
 struct API {
-    static let baseUrl = "http://172.16.66.169/"
+    static let baseUrl = "http://204.74.248.204/"
 }
 
 protocol Endpoint {
@@ -27,3 +27,4 @@ enum Endpoints {
         }
     }
 }
+

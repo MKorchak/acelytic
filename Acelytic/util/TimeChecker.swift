@@ -7,7 +7,7 @@ class TimeChecker {
     private var lastTime = Double(0)
 
     func checkTime() throws {
-        if ((NSDate().timeIntervalSince1970 - lastTime) > 3.0) {
+        if ((NSDate().timeIntervalSince1970 - lastTime) > 0.5) {
             lastTime = NSDate().timeIntervalSince1970
         } else {
             throw BackpressureError.backPressureError

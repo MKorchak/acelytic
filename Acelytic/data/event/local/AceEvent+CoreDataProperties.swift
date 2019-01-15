@@ -15,7 +15,7 @@ extension AceEvent {
         return NSFetchRequest<AceEvent>(entityName: "Event");
     }
     
-    @NSManaged public var id: String?
+    @NSManaged public var eventId: String?
     @NSManaged public var name: String?
     @NSManaged public var properties: String?
     @NSManaged public var time: Double

@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f91af174-b8a4-4f91-80c5-10b5411ea3a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Acelytic/data/event/EventRepository.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Acelytic/data/event/EventRepository.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Acelytic.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/Acelytic.podspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Acelytic.xcworkspace/xcuserdata/alexeypanyok.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Acelytic.xcworkspace/xcuserdata/alexeypanyok.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +17,7 @@
     <session id="604733167">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="2" />
@@ -30,7 +31,7 @@
           <entry key="contents" value="6" />
           <entry key="h" value="1" />
           <entry key="podspec" value="3" />
-          <entry key="swift" value="41" />
+          <entry key="swift" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -39,19 +40,19 @@
           <entry key="ObjectiveC" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Podfile" value="4" />
-          <entry key="Swift" value="41" />
+          <entry key="Swift" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Podfile" value="5" />
-          <entry key="podspec" value="115" />
+          <entry key="podspec" value="117" />
           <entry key="swift" value="752" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="115" />
+          <entry key="PLAIN_TEXT" value="117" />
           <entry key="Podfile" value="5" />
           <entry key="Swift" value="752" />
         </counts>
@@ -68,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Acelytic.podspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+            <state relative-caret-position="210">
+              <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -89,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Acelytic/data/event/local/EventLocalDataManager.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            <state relative-caret-position="300">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
                 <marker date="1547487189439" expanded="true" signature="1459:1492" ph="..." />
@@ -117,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Acelytic/data/event/EventRepository.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="435">
+              <caret line="29" column="67" lean-forward="true" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -141,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Acelytic/db/CoreDataStore.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="180">
+              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -155,6 +156,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Acelytic/api/Endpoints.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -178,8 +188,9 @@
         <option value="$PROJECT_DIR$/Acelytic/Acelytic.swift" />
         <option value="$PROJECT_DIR$/Acelytic/db/CoreDataStore.swift" />
         <option value="$PROJECT_DIR$/Acelytic/data/event/local/EventLocalDataManager.swift" />
-        <option value="$PROJECT_DIR$/Acelytic.podspec" />
         <option value="$PROJECT_DIR$/Acelytic/data/event/EventRepository.swift" />
+        <option value="$PROJECT_DIR$/Acelytic.podspec" />
+        <option value="$PROJECT_DIR$/Acelytic/api/Endpoints.swift" />
       </list>
     </option>
   </component>
@@ -256,6 +267,37 @@
               <item name="Acelytic" type="47feb1d3:ProjectViewModuleNode" />
               <item name="Acelytic" type="462c0819:PsiDirectoryNode" />
               <item name="Acelytic" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Acelytic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Acelytic" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="Acelytic" type="462c0819:PsiDirectoryNode" />
+              <item name="Acelytic" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Acelytic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Acelytic" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="Acelytic" type="462c0819:PsiDirectoryNode" />
+              <item name="Acelytic" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Acelytic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Acelytic" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="Acelytic" type="462c0819:PsiDirectoryNode" />
+              <item name="Acelytic" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Acelytic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Acelytic" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="Acelytic" type="462c0819:PsiDirectoryNode" />
+              <item name="Acelytic" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -319,13 +361,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26599000" />
+    <option name="totallyTimeSpent" value="28597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1178" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26464325" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26464325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -338,7 +380,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32970297" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32871288" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32871288" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.33979592" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -405,9 +447,6 @@
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Acelytic/api/Endpoints.swift">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Acelytic/api/TokenAdapter.swift">
       <provider selected="true" editor-type-id="text-editor">
@@ -532,38 +571,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Acelytic/db/CoreDataStore.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Dispatch/Dispatch.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="6352" column="7" lean-forward="true" selection-start-line="6352" selection-start-column="7" selection-end-line="6352" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Acelytic.podspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Acelytic/data/event/local/EventLocalDataManager.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-            <marker date="1547487189439" expanded="true" signature="1459:1492" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -588,11 +599,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Acelytic/data/event/EventRepository.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        <state relative-caret-position="435">
+          <caret line="29" column="67" lean-forward="true" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Acelytic.podspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Acelytic/data/event/local/EventLocalDataManager.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <marker date="1547487189439" expanded="true" signature="1459:1492" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Acelytic/db/CoreDataStore.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Acelytic/api/Endpoints.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="7" />
         </state>
       </provider>
     </entry>

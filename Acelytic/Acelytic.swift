@@ -51,23 +51,20 @@ public class Acelytic {
             return
         }
         let _ = fullLogEvent(name, params)
-                .subscribe(onNext: { (Response
-                ) in
-                    Logging.shared.log("Success event logged")
-                }, onError: { (Error) in
-                    Logging.shared.log("Error: \(Error)")
-                })
+                .subscribe(
+                        onNext: { (Response) in },
+                        onError: { (Error) in })
     }
 
     public func setUserId(_ userId: String) {
-        if(!isInit){
+        if (!isInit) {
             return
         }
         UserDefaults.standard.set(userId, forKey: C.ACE_USER_ID_DEFAULTS)
     }
 
     public func clearUserId() {
-        if(!isInit){
+        if (!isInit) {
             return
         }
         UserDefaults.standard.set(nil, forKey: C.ACE_USER_ID_DEFAULTS)

@@ -10,9 +10,13 @@ class EventRepository {
                     try $0.checkTime()
                 })
                 .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
-                .do(onError: { _ in
-                    self.saveEventToDB(event: event)
-                })
+                .catchError { error in
+                    Logging.shared.log("Event \(event.name) logged error \(error)")
+                    return EventLocalDataManager.shared.saveEvent(eventModel: event)
+                            .flatMap { _ in
+                                Observable<TimeChecker>.error(error)
+                            }
+                }
                 .flatMap { _ in
                     self.internalSendEvent(event: event)
                 }
@@ -22,8 +26,15 @@ class EventRepository {
     //Call in background
     private func internalSendEvent(event: EventModel) -> Observable<Response> {
         return RemoteApiService.shared.saveEvents(events: [event])
-                .do(onError: { _ in
-                    self.saveEventToDB(event: event)
+                .catchError { error in
+                    Logging.shared.log("Event \(event.name) logged error \(error)")
+                    return EventLocalDataManager.shared.saveEvent(eventModel: event)
+                            .flatMap { _ in
+                                Observable<Response>.error(error)
+                            }
+                }
+                .do(onNext: { _ in
+                    Logging.shared.log("Event \(event.name) logged success")
                 })
                 .flatMap {
                     self.internalSendEvents()
@@ -33,41 +44,23 @@ class EventRepository {
 
     //Call in background
     private func internalSendEvents() -> Observable<Response> {
-        return Observable.just(EventLocalDataManager.shared.retrieveEventList())
+        return EventLocalDataManager.shared.retrieveEventList()
+                .do(onNext: { events in
+                    Logging.shared.log("\(events.count) events  retrieved from db")
+                })
                 .filter {
                     !$0.isEmpty
                 }
                 .flatMap { events in
                     RemoteApiService.shared.saveEvents(events: events)
-                            .do(onNext: { response in
-                                self.removeEvents(events: events)
+                            .do(onError: { error in
+                                Logging.shared.log("\(events.count) Events logged error")
                             })
+                            .flatMap { response in
+                                EventLocalDataManager.shared.removeEvents(events: events).flatMap { _ in Observable.just(response) }
+                            }
                 }
                 .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
-    }
-
-    //Call in background
-    private func removeEvents(events: [EventModel]) {
-        do {
-            try EventLocalDataManager.shared.removeEvents(events: events)
-        } catch {
-
-        }
-
-    }
-
-    //Call in background
-    private func saveEventToDB(event: EventModel) {
-        do {
-            try insert(event: event)
-        } catch {
-
-        }
-    }
-
-    //Call in background
-    private func insert(event: EventModel) throws {
-        try EventLocalDataManager.shared.saveEvent(eventModel: event)
     }
 
 }
