@@ -8,6 +8,10 @@ class RemoteApiService {
 
     static let shared = RemoteApiService()
 
+    private init(){
+
+    }
+
     var apiKey: String = ""
 
     private lazy var sessionManager = getSessionManager()

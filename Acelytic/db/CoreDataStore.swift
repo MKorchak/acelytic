@@ -5,6 +5,10 @@ class CoreDataStore {
 
     static let shared = CoreDataStore()
 
+    private init(){
+
+    }
+
     lazy var persistentContainer: NSPersistentContainer  = {
         let modelURL = Bundle(for: type(of: self)).url(forResource: "Acelytic", withExtension: "momd")!
         let managedObjectModel = NSManagedObjectModel(contentsOf: modelURL)!

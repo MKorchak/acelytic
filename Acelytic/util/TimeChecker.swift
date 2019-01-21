@@ -4,6 +4,10 @@ class TimeChecker {
 
     static let shared = TimeChecker()
 
+    private init(){
+
+    }
+
     private var lastTime = Double(0)
 
     func checkTime() throws {

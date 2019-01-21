@@ -3,7 +3,12 @@ import CoreData
 import RxSwift
 
 class EventLocalDataManager {
+
     static let shared = EventLocalDataManager()
+
+    private init(){
+
+    }
 
     private func requestRetrieveEventList() -> Observable<[EventModel]> {
         return Observable.create { observer in

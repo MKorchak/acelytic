@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f91af174-b8a4-4f91-80c5-10b5411ea3a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Acelytic.xcworkspace/xcuserdata/alexeypanyok.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Acelytic.xcworkspace/xcuserdata/alexeypanyok.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Acelytic/C.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Acelytic/C.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +15,7 @@
     <session id="604733167">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="3" />
@@ -31,7 +29,7 @@
           <entry key="contents" value="6" />
           <entry key="h" value="1" />
           <entry key="podspec" value="3" />
-          <entry key="swift" value="46" />
+          <entry key="swift" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -40,19 +38,19 @@
           <entry key="ObjectiveC" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Podfile" value="4" />
-          <entry key="Swift" value="46" />
+          <entry key="Swift" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Podfile" value="5" />
-          <entry key="podspec" value="119" />
+          <entry key="podspec" value="120" />
           <entry key="swift" value="773" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="119" />
+          <entry key="PLAIN_TEXT" value="120" />
           <entry key="Podfile" value="5" />
           <entry key="Swift" value="773" />
         </counts>
@@ -69,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Acelytic.podspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="75">
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -87,11 +85,32 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Acelytic/data/event/local/EventLocalDataManager.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/CoreData.NSPersistentContainer/CoreData.NSPersistentContainer.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Acelytic/Acelytic.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+            <state relative-caret-position="-900">
+              <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -130,31 +149,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Acelytic/db/CoreDataStore.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Acelytic/C.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Acelytic/Acelytic.xcdatamodeld/Acelytic.xcdatamodel/contents">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -162,8 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Acelytic/api/Endpoints.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+            <state relative-caret-position="45">
+              <caret line="3" column="48" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -189,8 +187,8 @@
         <option value="$PROJECT_DIR$/Acelytic/api/Endpoints.swift" />
         <option value="$PROJECT_DIR$/Acelytic/data/event/EventRepository.swift" />
         <option value="$PROJECT_DIR$/Acelytic/util/LocationService.swift" />
-        <option value="$PROJECT_DIR$/Acelytic.podspec" />
         <option value="$PROJECT_DIR$/Acelytic/C.swift" />
+        <option value="$PROJECT_DIR$/Acelytic.podspec" />
       </list>
     </option>
   </component>
@@ -364,16 +362,15 @@
       <workItem from="1547197621258" duration="444000" />
       <workItem from="1547198993063" duration="1146000" />
       <workItem from="1547219107060" duration="2107000" />
-      <workItem from="1547562642604" duration="1564000" />
+      <workItem from="1547562642604" duration="4292000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30161000" />
+    <option name="totallyTimeSpent" value="32889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1178" y="-1057" width="1920" height="1057" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26730564" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -541,16 +538,6 @@
         <state relative-caret-position="-6026" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Acelytic/data/event/local/EventLocalDataManager.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Dispatch/Dispatch.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95250">
@@ -579,13 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Acelytic/api/Endpoints.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -628,22 +608,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Acelytic.podspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="75">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Acelytic/Acelytic.swift">
+    <entry file="file://$PROJECT_DIR$/Acelytic/api/Endpoints.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+        <state relative-caret-position="45">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Acelytic/C.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Acelytic/Acelytic.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-900">
+          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/CoreData.NSPersistentContainer/CoreData.NSPersistentContainer.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Acelytic/data/event/local/EventLocalDataManager.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
