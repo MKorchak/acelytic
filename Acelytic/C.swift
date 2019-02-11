@@ -1,6 +1,7 @@
 import Foundation
 
 public struct C {
+
     public static let START_SESSION = "ace_start_session"
     public static let END_SESSION = "ace_end_session"
 

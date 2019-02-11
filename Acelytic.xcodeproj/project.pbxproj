@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		5D2AFDD16E67D4B513BA16A1 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2AF50BEC4C701DE7E16CC2 /* Logging.swift */; };
 		5D2AFF86FAC519411B7879DD /* Acelytic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2AF38AA0B606A654300AED /* Acelytic.swift */; };
+		5D2AFF8E95D10AA867E4F493 /* AcelyticError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2AFFED3E37085B9BE8314C /* AcelyticError.swift */; };
 		7A18FD4621E8BAFA0000C4C4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A18FD4521E8BAFA0000C4C4 /* CoreData.framework */; };
 		7A18FD4921E8D3720000C4C4 /* AceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A18FD4821E8D3720000C4C4 /* AceEvent.swift */; };
 		7A18FD4B21E8D3AA0000C4C4 /* AceEvent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A18FD4A21E8D3AA0000C4C4 /* AceEvent+CoreDataProperties.swift */; };
 		7A18FD5E21ECF5090000C4C4 /* Acelytic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A18FD5C21ECF5090000C4C4 /* Acelytic.xcdatamodeld */; };
-		7AEE982321E8980200EC5C5A /* BackpressureError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE980C21E8980200EC5C5A /* BackpressureError.swift */; };
 		7AEE982421E8980200EC5C5A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE980D21E8980200EC5C5A /* Response.swift */; };
 		7AEE982521E8980200EC5C5A /* PersistanceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE980E21E8980200EC5C5A /* PersistanceError.swift */; };
 		7AEE982621E8980200EC5C5A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE980F21E8980200EC5C5A /* NetworkError.swift */; };
@@ -50,13 +50,13 @@
 		5D2AF38AA0B606A654300AED /* Acelytic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acelytic.swift; sourceTree = "<group>"; };
 		5D2AF50BEC4C701DE7E16CC2 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		5D2AFCD07F5B8C78D6FD81BB /* libAcelytic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAcelytic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D2AFFED3E37085B9BE8314C /* AcelyticError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcelyticError.swift; sourceTree = "<group>"; };
 		6C3B4031A00F16F8D596F02C /* Pods-Acelytic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acelytic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Acelytic/Pods-Acelytic.release.xcconfig"; sourceTree = "<group>"; };
 		6C5FCDA0CDB40C66E3BC7504 /* Pods_Acelytic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Acelytic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A18FD4521E8BAFA0000C4C4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7A18FD4821E8D3720000C4C4 /* AceEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AceEvent.swift; sourceTree = "<group>"; };
 		7A18FD4A21E8D3AA0000C4C4 /* AceEvent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AceEvent+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7A18FD5D21ECF5090000C4C4 /* Acelytic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Acelytic.xcdatamodel; sourceTree = "<group>"; };
-		7AEE980C21E8980200EC5C5A /* BackpressureError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackpressureError.swift; sourceTree = "<group>"; };
 		7AEE980D21E8980200EC5C5A /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		7AEE980E21E8980200EC5C5A /* PersistanceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistanceError.swift; sourceTree = "<group>"; };
 		7AEE980F21E8980200EC5C5A /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -143,10 +143,10 @@
 		7AEE980B21E8980200EC5C5A /* common */ = {
 			isa = PBXGroup;
 			children = (
-				7AEE980C21E8980200EC5C5A /* BackpressureError.swift */,
 				7AEE980D21E8980200EC5C5A /* Response.swift */,
 				7AEE980E21E8980200EC5C5A /* PersistanceError.swift */,
 				7AEE980F21E8980200EC5C5A /* NetworkError.swift */,
+				5D2AFFED3E37085B9BE8314C /* AcelyticError.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -306,11 +306,11 @@
 				7AEE983421E8980200EC5C5A /* C.swift in Sources */,
 				7AEE982D21E8980200EC5C5A /* LocationService.swift in Sources */,
 				7AEE982E21E8980200EC5C5A /* Endpoints.swift in Sources */,
-				7AEE982321E8980200EC5C5A /* BackpressureError.swift in Sources */,
 				7AEE982B21E8980200EC5C5A /* TimeChecker.swift in Sources */,
 				7AEE983021E8980200EC5C5A /* TokenAdapter.swift in Sources */,
 				5D2AFDD16E67D4B513BA16A1 /* Logging.swift in Sources */,
 				7A18FD5E21ECF5090000C4C4 /* Acelytic.xcdatamodeld in Sources */,
+				5D2AFF8E95D10AA867E4F493 /* AcelyticError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

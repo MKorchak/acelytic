@@ -7,7 +7,7 @@ class LocationService: NSObject {
 
     let geocoder = CLGeocoder()
 
-    private var delegate: LocationServiceDelegate?
+    private weak var delegate: LocationServiceDelegate?
 
     func setUp(delegate: LocationServiceDelegate?) {
         self.delegate = delegate
@@ -42,7 +42,7 @@ extension LocationService: CLLocationManagerDelegate {
     }
 }
 
-protocol LocationServiceDelegate {
+protocol LocationServiceDelegate: class {
 
     func updateAddress(location: CLLocation, country: String, adminArea: String, city: String)
 }

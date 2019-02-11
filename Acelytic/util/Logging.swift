@@ -4,8 +4,12 @@ class Logging {
 
     static let shared = Logging()
 
+    var isEnabled = false
+
     func log(_ message: String){
-        print("📈 Acelytic: \(message)")
+        if(isEnabled) {
+            print("📈 Acelytic: \(message)")
+        }
     }
 }
 

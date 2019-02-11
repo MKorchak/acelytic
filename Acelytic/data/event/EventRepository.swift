@@ -17,8 +17,8 @@ class EventRepository {
                                 Observable<TimeChecker>.error(error)
                             }
                 }
-                .flatMap { _ in
-                    self.internalSendEvent(event: event)
+                .flatMap { [weak self] _ in
+                    self?.internalSendEvent(event: event) ?? Observable.error(AcelyticError.unexpectedError)
                 }
 
     }
@@ -36,8 +36,8 @@ class EventRepository {
                 .do(onNext: { _ in
                     Logging.shared.log("Event \(event.name) logged success")
                 })
-                .flatMap {
-                    self.internalSendEvents()
+                .flatMap { [weak self] in
+                    (self?.internalSendEvents() ?? .empty())
                             .ifEmpty(switchTo: Observable.just($0))
                 }
     }

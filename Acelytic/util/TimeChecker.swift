@@ -4,6 +4,8 @@ class TimeChecker {
 
     static let shared = TimeChecker()
 
+    private static let BPTime = 0.2
+
     private init(){
 
     }
@@ -11,10 +13,10 @@ class TimeChecker {
     private var lastTime = Double(0)
 
     func checkTime() throws {
-        if ((NSDate().timeIntervalSince1970 - lastTime) > 0.5) {
+        if ((NSDate().timeIntervalSince1970 - lastTime) > TimeChecker.BPTime) {
             lastTime = NSDate().timeIntervalSince1970
         } else {
-            throw BackpressureError.backPressureError
+            throw AcelyticError.backPressureError
         }
     }
 }

@@ -1,11 +1,3 @@
-//
-//  Acelytic.swift
-//  Acelytic
-//
-//  Created by AlexeyPanyok on 1/9/19.
-//  Copyright © 2019 ACE. All rights reserved.
-//
-
 import RxSwift
 import ObjectMapper
 
@@ -21,13 +13,16 @@ public class Acelytic {
 
     private var isInit = false
 
+    private let disposeBag = DisposeBag()
+
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
 
-    public func initialize(_ key: String) {
+    public func initialize(_ key: String, enableLogging: Bool = false) {
         RemoteApiService.shared.apiKey = key
         isInit = true
+        Logging.shared.isEnabled = enableLogging
     }
 
     public func enableLocationTracking() {
@@ -45,15 +40,19 @@ public class Acelytic {
         observe()
     }
 
-
     public func logEvent(_ name: String, params: [String: String] = [:]) {
         if (!isInit) {
             return
         }
-        let _ = fullLogEvent(name, params)
+        fullLogEvent(name, params)
                 .subscribe(
-                        onNext: { (Response) in },
-                        onError: { (Error) in })
+                        onNext: { (Response) in
+                            Logging.shared.log("fullLogEvent \(name) success")
+                        },
+                        onError: { (Error) in
+                            Logging.shared.log("fullLogEvent \(name) error")
+                        })
+                .disposed(by: disposeBag)
     }
 
     public func setUserId(_ userId: String) {
@@ -79,16 +78,18 @@ public class Acelytic {
     private func fullLogEvent(_ name: String, _ params: [String: String] = [:]) -> Observable<Response> {
         return Observable.just(EventModel(name: name, properties: params))
                 .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
-                .map { event in
-                    Mapper<DeviceInfo>().toJSON(self.deviceInfo).forEach { e in
-                        event.properties[e.key] = e.value as? String
+                .map { [weak self] event in
+                    if let strongSelf = self {
+                        Mapper<DeviceInfo>().toJSON(strongSelf.deviceInfo).forEach { e in
+                            event.properties[e.key] = e.value as? String
+                        }
+                        event.properties[C.ACE_USER_ID] = UserDefaults.standard.string(forKey: C.ACE_USER_ID_DEFAULTS) ?? ""
                     }
-                    event.properties[C.ACE_USER_ID] = UserDefaults.standard.string(forKey: C.ACE_USER_ID_DEFAULTS) ?? ""
                     return event
                 }
                 .observeOn(MainScheduler.instance)
-                .flatMap { event in
-                    self.internalLogEvent(event)
+                .flatMap { [weak self] event in
+                    self?.internalLogEvent(event) ?? Observable.error(AcelyticError.unexpectedError)
                 }
     }
 
@@ -111,5 +112,4 @@ public class Acelytic {
     @objc private func endSession() {
         logEvent(C.END_SESSION)
     }
-
 }
