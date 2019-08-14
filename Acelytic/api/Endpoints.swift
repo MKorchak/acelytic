@@ -1,7 +1,7 @@
 import Foundation
 
 struct API {
-    static var baseUrl = "http://204.74.248.204/"
+    static var baseUrl = "http://acelytic.ace.date/"
 }
 
 protocol Endpoint {
