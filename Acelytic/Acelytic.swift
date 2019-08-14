@@ -19,7 +19,10 @@ public class Acelytic {
         NotificationCenter.default.removeObserver(self)
     }
 
-    public func initialize(_ key: String, enableLogging: Bool = false) {
+    public func initialize(_ key: String,
+                           baseUrl: String? = nil,
+                           enableLogging: Bool = false) {
+        baseUrl.map { API.baseUrl = $0 }
         RemoteApiService.shared.apiKey = key
         isInit = true
         Logging.shared.isEnabled = enableLogging
