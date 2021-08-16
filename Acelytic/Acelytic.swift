@@ -71,6 +71,16 @@ public class Acelytic {
         }
         UserDefaults.standard.set(nil, forKey: C.ACE_USER_ID_DEFAULTS)
     }
+    
+    public func setUserProperties(_ userProperties: [String: Any]) {
+        guard isInit else { return }
+        UserPropertiesLocalDataManager.shared.saveUserProperties(userProperties)
+    }
+    
+    public func clearUserProperties() {
+        guard isInit else { return }
+        UserPropertiesLocalDataManager.shared.clearUserProperties()
+    }
 
     private func internalLogEvent(_ event: EventModel) -> Observable<Response> {
         return repository.logEvent(event: event)
@@ -81,7 +91,7 @@ public class Acelytic {
     private func fullLogEvent(_ name: String, _ params: [String: String] = [:]) -> Observable<Response> {
         return Observable.just(EventModel(name: name, properties: params))
                 .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
-                .map { [weak self] event in
+                .map { [weak self] event -> EventModel in
                     if let strongSelf = self {
                         Mapper<DeviceInfo>().toJSON(strongSelf.deviceInfo).forEach { e in
                             event.properties[e.key] = e.value as? String
@@ -90,8 +100,21 @@ public class Acelytic {
                     }
                     return event
                 }
+                .flatMap { event -> Observable<EventModel> in
+                    UserPropertiesLocalDataManager
+                        .shared
+                        .fetchUserProperties()
+                        .ifEmpty(default: [:])
+                        .catchErrorJustReturn([:])
+                        .asObservable()
+                        .map {
+                            event.properties[C.ACE_USER] = $0
+                            
+                            return event
+                        }
+                }
                 .observeOn(MainScheduler.instance)
-                .flatMap { [weak self] event in
+                .flatMap { [weak self] event -> Observable<Response> in
                     self?.internalLogEvent(event) ?? Observable.error(AcelyticError.unexpectedError)
                 }
     }

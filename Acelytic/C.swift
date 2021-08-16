@@ -15,4 +15,5 @@ public struct C {
 
     public static let ACE_USER_ID_DEFAULTS = "ace_user_id_defaults"
     public static let ACE_USER_ID = "userId"
+    public static let ACE_USER = "user"
 }
