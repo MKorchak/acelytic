@@ -10,6 +10,7 @@ public class Acelytic {
     }()
 
     private var deviceInfo = DeviceInfo()
+    private var userProperties: [String: Any]?
 
     private var isInit = false
 
@@ -100,10 +101,9 @@ public class Acelytic {
                     }
                     return event
                 }
-                .flatMap { event -> Observable<EventModel> in
-                    UserPropertiesLocalDataManager
-                        .shared
-                        .fetchUserProperties()
+                .flatMap { [weak self] event -> Observable<EventModel> in
+                    (self.flatMap(\.userProperties).map(Maybe.just) ?? Maybe.empty())
+                        .ifEmpty(switchTo: UserPropertiesLocalDataManager.shared.fetchUserProperties())
                         .ifEmpty(default: [:])
                         .catchErrorJustReturn([:])
                         .asObservable()
