@@ -10,7 +10,6 @@ public class Acelytic {
     }()
 
     private var deviceInfo = DeviceInfo()
-    private var userProperties: [String: Any]?
 
     private var isInit = false
 
@@ -75,12 +74,12 @@ public class Acelytic {
     
     public func setUserProperties(_ userProperties: [String: Any]) {
         guard isInit else { return }
-        UserPropertiesLocalDataManager.shared.saveUserProperties(userProperties)
+        repository.setUserProperties(userProperties)
     }
     
     public func clearUserProperties() {
         guard isInit else { return }
-        UserPropertiesLocalDataManager.shared.clearUserProperties()
+        repository.clearUserProperties()
     }
 
     private func internalLogEvent(_ event: EventModel) -> Observable<Response> {
@@ -100,18 +99,6 @@ public class Acelytic {
                         event.properties[C.ACE_USER_ID] = UserDefaults.standard.string(forKey: C.ACE_USER_ID_DEFAULTS) ?? ""
                     }
                     return event
-                }
-                .flatMap { [weak self] event -> Observable<EventModel> in
-                    (self.flatMap(\.userProperties).map(Maybe.just) ?? Maybe.empty())
-                        .ifEmpty(switchTo: UserPropertiesLocalDataManager.shared.fetchUserProperties())
-                        .ifEmpty(default: [:])
-                        .catchErrorJustReturn([:])
-                        .asObservable()
-                        .map {
-                            event.properties[C.ACE_USER] = $0
-                            
-                            return event
-                        }
                 }
                 .observeOn(MainScheduler.instance)
                 .flatMap { [weak self] event -> Observable<Response> in
