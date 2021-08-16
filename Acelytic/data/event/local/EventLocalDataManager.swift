@@ -19,7 +19,7 @@ class EventLocalDataManager {
                     let eventModels = try events.map {
                         EventModel(
                                 name: $0.name ?? "",
-                                properties: try JSONSerialization.jsonObject(with: ($0.properties?.data(using: .utf8))!) as! [String: String],
+                                properties: try JSONSerialization.jsonObject(with: ($0.properties?.data(using: .utf8))!) as! [String: Any],
                                 time: $0.time,
                                 id: $0.eventId ?? "")
                     }
