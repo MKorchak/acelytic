@@ -16,7 +16,7 @@ enum Endpoints {
 
         public var path: String {
             switch self {
-            case .fetch: return "v1/event/save"
+            case .fetch: return ""//return "v1/event/save"
             }
         }
 

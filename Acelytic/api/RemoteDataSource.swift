@@ -21,9 +21,9 @@ class RemoteApiService {
                 .requestRx(
                 method: .post,
                 url: Endpoints.SaveEvent.fetch.url,
-                parameters: events.map {
-                    Mapper<EventModel>().toJSON($0)
-                })
+                parameters: Mapper<EventModel>().toJSONDictionaryOfArrays(["events": events]),
+                encoding: JSONEncoding.default
+                )
     }
 }
 
